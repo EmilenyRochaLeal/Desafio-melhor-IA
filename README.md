@@ -5,13 +5,14 @@
 ## Comparação Justa : Sim ou não?
   A escolha dos modelos foi baseada em alguns critérios mostrados na tabela abaixo .
 
-      | **Critério**                 | **DeepSeek R1 (Distill-LLaMA 70B)**                | **Claude 3.5 Sonnet**                               | **LLaMA-3.3-70B-Versatile (Meta)**                  | **Comparabilidade**                                      |
-      
-      | **Parâmetros ativos**        | ~70B (distilado para eficiência)                  | ~50B+ (estimado, similar ao Claude 3)               | 70B                                               | 🟩 **Comparáveis**                                       |
-      | **Foco**                     | Precisão técnica e eficiência computacional       | Contextualização profunda e raciocínio ético       | Raciocínio contextual, NLP robusto                | 🟩 **Comparáveis** (foco em NLP avançado)                 |
-      | **Velocidade**               | ⚡ Alta (distilado para maior eficiência)          | ⏳ Moderada (devido à profundidade contextual)      | ⚡ Alta (modelo otimizado para versatilidade)      | 🟩 **Comparáveis**                                       |
-      | **Contexto e raciocínio**    | Alto (bom em tarefas técnicas e QA)               | 🏆 Muito alto (análise semântica profunda)          | 🔥 Alto (excelente em raciocínio contextual e semântico) | 🟩 **Comparáveis**                                       |
-      | **Criatividade**             | Média-alta (boa em explicações técnicas)          | 🏆 Alta (interpretação e nuances contextuais)       | 🔥 Alta (capaz de gerar respostas criativas e versáteis) | 🟩 **Comparáveis**                                       |
+  | **Critério**              | **DeepSeek R1 (Distill-LLaMA 70B)**       | **Claude 3.5 Sonnet**                        | **LLaMA-3.3-70B-Versatile (Meta)**           | **Comparabilidade**                               |
+|---------------------------|-------------------------------------------|----------------------------------------------|----------------------------------------------|---------------------------------------------------|
+| **Parâmetros ativos**     | ~70B (distilado para eficiência)          | ~50B+ (estimado, similar ao Claude 3)        | 70B                                         | 🟩 **Comparáveis**                                 |
+| **Foco**                  | Precisão técnica e eficiência computacional| Contextualização profunda e raciocínio ético | Raciocínio contextual, NLP robusto          | 🟩 **Comparáveis** (foco em NLP avançado)           |
+| **Velocidade**            | ⚡ Alta (distilado para maior eficiência)  | ⏳ Moderada (devido à profundidade contextual)| ⚡ Alta (modelo otimizado para versatilidade)| 🟩 **Comparáveis**                                 |
+| **Contexto e raciocínio** | Alto (bom em tarefas técnicas e QA)       | 🏆 Muito alto (análise semântica profunda)    | 🔥 Alto (excelente em raciocínio contextual e semântico) | 🟩 **Comparáveis**                                 |
+| **Criatividade**          | Média-alta (boa em explicações técnicas)  | 🏆 Alta (interpretação e nuances contextuais) | 🔥 Alta (capaz de gerar respostas criativas e versáteis) | 🟩 **Comparáveis**                                 |
+
 
 # Resultado 
   A DeepSeek se destacou por oferecer respostas claras, detalhadas e com exemplos ilustrativos. Apesar de trazer respostas em inglês.
@@ -27,15 +28,15 @@
 
 ## Como rodar o projeto : 
 
-### Fazer as Instalações do Projeto
+### 1.  Fazer as Instalações do Projeto
   - **aisuite**: Interface simples e unificada para vários provedores de IA generativa.  
   - **docstring-parser**: Para extrair informações estruturadas de docstrings.  
 
-###Chaves de acesso
+### 2. Chaves de acesso
   - Entrar no site [Groq](https://console.groq.com/keys) e criar a api_key do groq um provedor dos modelos  e colar no getpass.
   - Entrar no site [Anthropic](https://console.anthropic.com/settings/keys) e criar a api_key do modelo Anthropic colar no getpass. 
 
-### Rodar cada cédula do no colab 
+### 3. Rodar cada cédula do no colab 
 
 ## Funções 
 Função **aks** recebe como parâmetro a pergunta, o modelo e a definição do system_message. A função tem o objetivo de dá ao modelo a pergunta que ele irá responder.
